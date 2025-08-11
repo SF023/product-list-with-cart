@@ -79,6 +79,7 @@ url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300
     border-radius: 15px;
     font-size: 8px;
     font-weight: 600;
+    cursor: pointer;
 }
 
 .quantity-controls {
@@ -105,16 +106,24 @@ url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300
 
 .increase, .decrease {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 0.5px 3px;                  
-    font-size: 15px;                    
+    justify-content: center;                 
+    border: 0;                  
     cursor: pointer;                    
     background-color: hsl(14, 86%, 42%);
     color: white;
-    border: 1px solid white;
-    border-radius: 15px;
     margin: 5px;
+}
+
+.increase img {
+    border: 1px solid rgb(231, 231, 231);
+    border-radius: 15px;
+    padding: 2px;
+}
+
+.decrease img {
+    border: 1px solid rgb(231, 231, 231);
+    border-radius: 15px;
+    padding: 2px;
 }
 
 .label{
@@ -269,25 +278,7 @@ hr {
     color: hsl(0, 0%, 100%);
     border-radius: 30px;
     align-items: center;
-}
-
-.toast {
-  position: fixed;
-  top: 20px;
-  left: 50%;
-  transform: translateX(-50%);
-  background: hsl(14, 86%, 42%);
-  color: hsl(0, 0%, 100%);
-  padding: 10px 20px;
-  border-radius: 5px;
-  z-index: 9999;
-  opacity: 0;
-  transition: opacity 0.5s ease;
-  font-weight: 600;
-  box-shadow: 0 2px 10px rgba(0,0,0,0.15);
-}
-.toast.show {
-  opacity: 1;
+    cursor: pointer;
 }
 
 #confirmation-modal{
@@ -311,7 +302,7 @@ hr {
     align-items: center;
     background-color: hsl(0, 0%, 100%);
     padding: 20px;
-    max-height: 60%;
+    max-height: 70%;
     overflow: hidden;
     position: relative;
 }
@@ -412,4 +403,5 @@ hr {
     border-radius: 20px;
     color: hsl(0, 0%, 100%);
     font-size: 11px;
+    cursor: pointer;
 }
