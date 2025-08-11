@@ -290,4 +290,126 @@ hr {
   opacity: 1;
 }
 
+#confirmation-modal{
+    display: none;
+    position: fixed;
+    top: 50%; left: 50%;
+    width: 100%;
+    height: 100%;
+    transform: translate(-50%, -50%);
+    background-color: hsl(0, 0%, 100%);
+    background-color: rgba(0,0,0,0.5);
+}
 
+.modal-content{
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    width: 25%;
+    height: auto;
+    border-radius: 5px;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(0, 0%, 100%);
+    padding: 20px;
+    max-height: 60%;
+    overflow: hidden;
+    position: relative;
+}
+
+.modal-content img {
+    width: 20px;
+    height: auto;
+    aspect-ratio: 1/1;
+    margin-bottom: 5px;
+}
+
+.modal-content h3 {
+    color: hsl(14, 65%, 9%);
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+.modal-content p {
+    font-size: 9px;
+    font-weight: 500;
+    color: hsl(12, 20%, 44%);
+    margin-bottom: 25px;
+}
+
+#modal-cart-items{
+    max-height: 70%;
+    overflow-y: auto;
+}
+
+.modal-cart-item {
+    height: 40px;
+    /*display: flex;*/
+    /*border-bottom: 1px solid hsla(12, 20%, 44%, 0.2);*/
+    border-radius: 5px;
+    font-size: 1rem;
+    /*color: hsl(14, 65%, 9%);*/
+    background-color: hsl(20, 50%, 98%);
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 5px;
+    padding-bottom: 10px;
+}
+
+.modal-cart-item span {
+    font-size: 11px;
+    font-weight: 650;
+    color: hsl(14, 65%, 9%);
+}
+
+.modal-cart-item span:nth-child(3) {
+    color: hsl(14, 86%, 42%);
+    font-size: 11px;
+    font-weight: 650;
+    margin-right: 12px;
+}
+
+.modal-cart-item span:nth-child(4) {
+    color: hsl(12, 20%, 44%);
+    font-weight: 500;
+}
+
+.modal-cart-item span:nth-child(5) {
+    display: flex;
+    float: right;
+}
+
+.modal-cart-total {
+    padding-top: 20px;
+}
+
+.modal-cart-total span {
+    color: hsl(14, 65%, 9%);
+    font-size: 12;
+    font-weight: 500;
+}
+
+.modal-cart-total span:nth-child(3) {
+    display: flex;
+    float: right;
+    color: hsl(14, 65%, 9%);
+    font-size: 16px;
+    font-weight: 700;
+    margin-right: 0;
+}
+
+.new-order-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.new-order-btn button {
+    background-color: hsl(14, 86%, 42%);
+    width: 90%;
+    height: 30px;
+    border: 0;
+    border-radius: 20px;
+    color: hsl(0, 0%, 100%);
+    font-size: 11px;
+}
